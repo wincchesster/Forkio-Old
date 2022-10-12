@@ -1,0 +1,40 @@
+@mixin mont-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@mixin mont-normal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@mixin lato-bold {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+@mixin lato-normal {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.main__present {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 129px 0 70px;
+
+    .present__title {
+        @include mont-bold;
+        font-size: 54px;
+        color: #635C73;
+    }
+
+    .present__descript {
+        @include lato-normal;
+        font-size: 21px;
+        line-height: 32px;
+        color: #323232;
+        text-align: center;
+    }
+}
